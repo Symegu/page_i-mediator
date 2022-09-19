@@ -1,0 +1,19 @@
+@mixin font($font-weight, $font-size, $line-height, $color) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+    font-family: 'Inter', sans-serif;
+}
+
+@mixin btn($width) {
+    font-family: 'Inter', sans-serif;
+    @include font(400, 16px, 19px, $main-white);
+    width: $width;
+    padding: 25px 0;
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    background: linear-gradient(90deg, #4371DC -4.78%, #6D16B2 108.53%);
+}

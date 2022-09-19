@@ -1,0 +1,38 @@
+.consult {
+    padding: 200px 0;
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &-description {
+        width: 50%;
+        & h3 {
+            @include font(500, 48px, 55px, $main-black);
+            margin-bottom: 40px;
+        }
+        & p {
+            @include font(400, 20px, 24px, $main-black);
+            max-width: 380px;
+        }
+    }
+    &-form {
+        margin-right: 77px;
+        &__heading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 33px;
+            & img {
+                margin-bottom: 9px;
+            }
+            & p {
+                @include font(400, 16px, 19px, #333333);
+                &:last-of-type {
+                    @include font(400, 14px, 17px, #646464);
+                    margin-top: 9px;
+                }
+            }
+        }
+    }
+}

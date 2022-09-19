@@ -1,0 +1,73 @@
+.needs {
+    padding: 200px 0 165px 0;
+    &-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    & h3 {
+        @include font(700, 42px, 50px, $main-black);
+        text-align: center;
+        max-width: 620px;
+    }
+    &-triangle {
+        padding-top: 30px;
+        margin-bottom: 300px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & .triangle {
+            height: 450px;
+            width: 50%;
+            background-image: url("/page_i-mediator/img/logo.png");
+            background-size: cover;
+            position: relative;
+            & p {
+                @include font(400, 28px, 34px, $main-black);
+            }
+        }
+        & .left, .right, .top {
+            position: absolute;
+            max-width: 300px;
+        }
+        & .left {
+            bottom: -65px;
+        }
+        & .right {
+            bottom: -100px;
+            right: -100px;
+        }
+        & .top {
+            top: 35px;
+            left: 30%;
+        }
+
+    }
+    &-text {
+        padding-top: 100px;
+        list-style-type: none;
+        width: 40%;
+        & li {
+            @include font(400, 24px, 30px, #202020);
+            margin-bottom: 32px;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.interference {
+    & ul {
+        list-style-type: none;
+        display: flex;
+    }
+    & li {
+        height: 240px;
+        width: 488px;
+        background-color: $main-blue;
+        margin-right: 21px;
+        border-radius: 24px;
+    }
+}

@@ -1,0 +1,80 @@
+.request, .request-place{
+    padding: 200px 0;
+    background-color: #fff;
+    &-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & h3 {
+            @include font(700, 42px, 50px, $main-black);
+            margin-bottom: 70px;
+        }
+    }
+    &-info {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &-text {
+        max-width: 60%;
+        & p {
+            @include font(400, 36px, 44px, $main-black);
+            margin-bottom: 70px;
+        }
+        & button {
+            @include btn(387px);
+        }
+    }
+    &-pic {
+        width: 515px;
+        height: 347px;
+        background-color: $main-violet;
+        position: relative;
+        border-radius: 20px;
+        margin-top: 27px;
+        & img {
+            position: absolute;
+            z-index: 2;
+            border-radius: 20px;
+            top: -27px;
+            right: 16px;
+        }
+    }
+}
+
+.request-place {
+    &-info {
+        padding-bottom: 200px;
+    }
+    &-pic {
+        width: 317px;
+        height: 442px;
+        background-color: $main-violet;
+        position: relative;
+        border-radius: 20px;
+        margin-top: 27px;
+        & img {
+            position: absolute;
+            z-index: 2;
+            border-radius: 20px;
+            top: -27px;
+            right: 16px;
+        }
+    }
+    &-text {
+        max-width: 65%;
+        &__btn {
+            display: flex;
+            align-items: center;
+            & p {
+                @include font(400, 16px, 19px, $main-black);
+                margin-left: 60px;
+                margin-bottom: 0;
+                max-width: 300px;
+            }
+            & button {
+                @include btn(387px);
+            }
+        }
+    }
+}

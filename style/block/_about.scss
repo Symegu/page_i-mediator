@@ -1,0 +1,47 @@
+.about {
+    background-color: #fff;
+    padding: 200px 0;
+    &-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 200px;
+    }
+    &__logo {
+        background-image: url("/page_i-mediator/img/logo.png");
+        background-size: cover;
+        width: 500px;
+        height: 300px;
+    }
+    &-text {
+        width: 85%;
+        & h3 {
+            @include font(700, 42px, 50px, $main-black);
+            margin-bottom: 70px;
+        }
+        & p {
+            @include font(400, 36px, 42px, $main-black);
+        }
+        &__btn {
+            display: flex;
+            align-items: center;
+            margin-top: 72px;
+            & button {
+                @include btn(387px);
+            }
+            & .btn__info {
+                width: 264px;
+                margin-left: 60px;
+                @include font(400, 16px, 19px, #646464);
+            }
+        }
+    }
+    &__picture {
+        background-image: url("/page_i-mediator/img/picture.png");
+        background-size: cover;
+        height: 700px;
+        width: 1360px;
+        margin: 0 auto;
+        border-radius: 24px;
+    }
+}

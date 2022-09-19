@@ -1,0 +1,39 @@
+.promo {
+    &-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 550px;
+    }
+    &-text {
+        width: 50%;
+        & h1 {
+            @include font(700, 72px, 87px, $main-black);
+            margin-bottom: 60px;
+        }
+        &__info {
+            @include font(400, 32px, 39px, $main-black);
+        }
+        & button {
+            margin-top: 72px;
+            @include btn(387px);
+        }
+    }
+    &-pic {
+        height: 100%;
+        position: relative;
+        & svg {
+            position: absolute;
+            top: 33px;
+            right: 0;
+        }
+        & img {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            right: 116px;
+            width: 323px;
+            height: 457px;
+        }
+    }
+}

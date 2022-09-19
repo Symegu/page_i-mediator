@@ -1,0 +1,31 @@
+.header {
+    height: 140px;
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__btn {
+        @include font(400, 16px, 19px, $main-darkblue);
+        padding: 16px 27px;
+        border-radius: 16px;
+        background-color: #BFD8FF;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.breadcrumbs {
+    display: flex;
+    list-style-type: none;
+    & .crumb {
+        margin-right: 31px;
+        &:last-of-type {
+            margin-right: 0;
+        }
+        & a {
+            text-decoration: none;
+            @include font(400, 18px, 21px, #667093);
+        }
+    }
+}

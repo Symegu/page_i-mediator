@@ -1,0 +1,43 @@
+@import "_vars.scss";
+@import "_mixins.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: $desktop-wrap;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    background-color: $main-white;
+    padding-top: 140px;
+    min-height: calc(100vh - 140px);
+}
+
+header {
+    position: fixed;
+    background-color: $main-white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+@import "./block/_header.scss";
+@import "./block/_footer.scss";
+@import "./block/_promo.scss";
+@import "./block/_about.scss";
+@import "./block/_needs.scss";
+@import "./block/_request.scss";
+@import "./block/_advantages.scss";
+@import "./block/_consult.scss";
+@import "./block/_application.scss";
+@import "./block/_news.scss";
